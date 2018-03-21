@@ -1,0 +1,339 @@
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+/* Global Style
+   ========================================================================== */
+html{
+  font-family: 'Exo', sans-serif;
+  width:100%;
+  margin:0;
+  padding:0;
+  display:block;
+}
+body{
+  text-align: left;
+  font-weight: normal;
+  color: #333; /* Set Default Content Color */
+  font-size: 14px; /* Set Default Font Size */
+  line-height: 1.5em; /* Set Default Line Height */
+  width:  100%;
+}
+
+/* Default Link Style
+   ========================================================================== */
+a,a:link{
+  color: red; /* Set Default Link Color */
+  text-decoration: underline;
+  outline: 0;
+  display: block;
+}
+a:hover,a:active{
+  text-decoration: none;
+}
+
+/* Fix Clear Float
+   ========================================================================== */
+.clearfix{
+  clear: both;
+  height: 0px;
+  width: 100%;
+  content: '';
+  background-color: transparent;
+}
+.clearfix:before, .clearfix:after{
+  clear: both;
+}
+
+/* Show/Hide PC & SP
+   ========================================================================== */
+.pc{display: block;}
+.sp{display: none;}
+
+@media(max-width: 640px){
+  .pc{display: none;}
+  .sp{display: block;}
+}
+.header-wrapper{
+  width: 100%;
+  margin:0;
+  overflow: hidden;
+  display: block;
+}
+.width-site{
+  width:1200px;
+  margin:0 auto;
+  padding-top: 0px;
+}
+.smaller{
+  background-color: #40454b;
+}
+.header{
+  padding-bottom: 7px;
+}
+.header .logo{
+  float: left;
+  margin-top:  10px;
+}
+.header .logo img{
+  width: 76%;
+}
+.header .menu{
+  float: right;
+}
+.menu ul.menu-wrap{
+  list-style-type: none;
+}
+.menu ul.menu-wrap li{
+  float: left;
+}
+.menu ul.menu-wrap li a{
+  text-decoration:none;
+  text-transform: uppercase;
+  color: #1d2124;
+  font-size: 15px;
+  margin: 0;
+  padding: 10px 21px;
+}
+/*==================*/
+header#headerWrapper .headerContent{
+  width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+  display: block;
+  padding: 20px 0px 0px 0px;
+}
+.headLogo{float: left;}
+.headLogo h1{padding: 0;margin: 0; line-height: 1.5em;}
+.headLogo img{line-height:  0;}
+.headMenu{float:right; overflow:hidden; }
+.langauge{width: 90px;overflow:hidden;float:right;margin-right: 24px;}
+.kh_lang{float:left;}
+.eng_lang{float:right;}
+nav.menuWrapper{clear:  both;overflow:hidden;text-transform:uppercase;float:  right;}
+nav.menuWrapper ul{list-style-type:none;overflow:  hidden;}
+nav.menuWrapper ul li{
+  float:left;
+  text-align:center;
+  margin-right:5px;
+  padding: 0px 25px 15px 25px;
+}
+nav.menuWrapper ul li:last-child{
+  margin-right:0px;
+}
+nav.menuWrapper ul li.active{border-bottom: 3px solid #1b75bc;}
+nav.menuWrapper ul li.active a{color: #1b75bc;}
+nav.menuWrapper ul li a{
+  text-decoration:none;
+  font-size: 16px;
+  color:#494949;
+  line-height: 50px;
+}
+/*===============================================*/
+.image-slider{
+  width:100%;
+  margin:0 auto;
+}
+.image-block{
+  width:100%;
+  background-image: url("../images/banner1491487276235.jpg");
+  height: 950px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.img-01{
+  background-image: url("../images/banner_img.png");
+  height: 700px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+/*==============content*/
+.who-we-are{
+  background-color: #fff;
+  padding: 40px 0px 0px 40px;
+  text-align: center;
+}
+.slick-dots{
+  bottom: 100px !important;
+}
+.slick-dots li button:before {
+  font-size: 50px !important;
+}
+.slick-next{
+  right: 50px !important;
+  background-image: url(../images/right-arrow.png) !important;
+  background-size: 100% !important;
+  z-index: 100;
+}
+.slick-prev{
+  right: 50px !important;
+  background-image: url(../images/left-arrow.png) !important;
+  z-index: 100;
+  background-repeat: no-repeat;
+  background-size: 100% !important;
+}
+.slick-prev{
+  left:50px !important;
+}
+.slick-prev, .slick-next{
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 50px !important;
+  height: 50px !important;
+  padding: 0;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  cursor: pointer;
+
+}
+.slick-prev:before, .slick-next:before{
+
+  font-size: 0px;
+  line-height: 1;
+  opacity: .75;
+  -webkit-font-smoothing: antialiased;
+  color: #21252933 !important;
+}
+/*================================*/
+.content-head{
+  text-align: center;
+  font-family: 'Exo', sans-serif;
+  padding: 40px 0px 20px 0px;
+}
+.content-head h1{
+  font-size:30px;
+  line-height:1.3em;
+
+}
+.content-head p{
+  font-size: 17px;
+  line-height:1.5em;
+}
+/*===================company-profile======================*/
+.company-profile{
+
+}
+.content-block{
+  /* background-color:#e6b140; */
+  overflow:hidden;
+  padding:0;
+  margin:0;
+}
+.typeRow01 article{
+  width: 323px;
+  height: 300px;
+  float:left;
+  padding:20px;
+  margin:0px 10px 10px 0px;
+  background-color: #1a74bb;
+  padding: 30px 20px 50px 20px;
+  border-bottom: 1px solid #1a74bb;
+  border-right: 1px solid #1a74bb;
+}
+.typeRow01 article:nth-of-type(3n){
+  margin-right:0px;
+}
+.typeRow01 {overflow: hidden;}
+.typeRow01 article:nth-child(3){border-right: 0px solid #e0a925;}
+.typeRow01 article:nth-child(4){border-bottom: 0px solid #e0a925;}
+.typeRow01 article:nth-child(5){
+  border-bottom: 0px solid #1a74bb;;
+}
+.typeRow01 article:nth-child(6){
+  border-bottom: 0px solid #1a74bb;;
+  border-right: 0px solid #1a74bb;;
+}
+.typeRow01 article:hover {
+  background: #1a74bb9e;
+}
+.typeRow01 article p.title {
+  font-size: 22px;
+  padding: 14px 0 14px 0;
+  margin: 0;
+  text-align: center;
+  width: auto;
+}
+.typeRow01 article p.shrtDetail {
+  text-align: left;
+  font-size: 16px;
+  margin: 0;
+  width: auto;
+}
+.typeRow01 .services a{
+  text-align: center;
+}
+.typeRow01 img {width: 127px;margin:0 auto;color: #1a74bb;}
+.typeRow01{
+  width:1000px;
+  margin: 0 auto;
+}
+/*=================*/
+.section-wedo{
+  background-color: #f8f9fa;
+  overflow: hidden;
+  margin-top: 40px;
+  padding-bottom:40px;
+  position: relative;
+  font-family: 'Exo', sans-serif;
+}
+
+.idea_item{
+  padding: 0;
+  overflow: hidden;
+  margin-bottom:30px;
+
+}
+.item_img{
+  float: left;
+}
+.item_img img{
+  width:100%;
+  line-height: 0;
+}
+.item_des{
+  float: right;
+  padding:30px;
+  overflow: hidden;
+  text-align: left;
+
+}
+.item_des h2{
+  font-size:20px;
+}
+.item_des p{
+  font-size:16px;
+}
+/*============================*/
+#section3{
+  background: url("../images/investment_banking-864x450.jpg") no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:500px;
+}
+.section_hover{
+  background-color: #212529e0;
+  height:500px;
+}
+.idea_section .content-head h1{
+  color: #dee2e6;
+}
+.idea_section .content-head p{
+  color:#dee2e6;
+}
+.footer-wrapper{
+  background-color: #1b1e21;
+}
